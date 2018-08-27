@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 
-
 public class LandVilleMain {
 	
 	
@@ -14,8 +13,7 @@ public class LandVilleMain {
         	return false;
         } else {
         	return true;	
-        }		
-	
+        }			
 	}
 			
 	
@@ -45,11 +43,8 @@ public class LandVilleMain {
 	}
 	
 	
-	
-	
 	public static void main(String[] args) {
-		
-		
+			
 		Scanner inp = new Scanner(System.in);										
 		int rows = 0;
 		int columns = 0;
@@ -84,19 +79,19 @@ public class LandVilleMain {
 		System.out.println("What would you like to do now?");			
 		boolean menu = false;
 				
-		while (menu == false) {
-	
+		
+		while (menu == false) {	
 			System.out.println("Main Menu\n 1. Build a house\n 2. Display land\n 3. Clear land\n 4. Quit");	
 			int selectionMade = inp.nextInt();
 	        			
 			// selection options
-	        if (selectionMade == 1) {	        	
-	        	System.out.println("You have selected to build a house.");		        	
+	        if (selectionMade == 1) {	 
+	        	
+	        	System.out.println("You have selected to build a house.");
+	        	
 				if (land.hasHouse == true) {					
 					System.out.println("ERROR: You can not have more than one house on your land.");					
-				} else {
-															
-										
+				} else {														
 					// reset moveahead boolean
 					moveahead = false;										
 					int houseRows = 0;
@@ -112,8 +107,7 @@ public class LandVilleMain {
 					}					
 					
 					moveahead = false;
-					
-					
+										
 					// checking enough space with columns
 					while (moveahead == false) {
 						System.out.println("How many columns do you want your house to be?");					
